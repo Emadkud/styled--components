@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Button from "./Button";
-import { green} from "./Colors";
+import {green} from "./Colors";
 
 
 const NavLink = styled.a`
@@ -10,9 +10,6 @@ const NavLink = styled.a`
   position:: relative;
   margin-left: 15px;
 `;
-
-
-
 
 
 const NavLogo = styled.p`
@@ -47,26 +44,27 @@ const Nav = styled.nav`
 
 const NavBar = () => {
   return (
+ 
     <Nav>
       <NavLogo>B</NavLogo>
-    
-        <OL>
+     <OL>
           <LI>
-            <NavLink>1About</NavLink>
+            <NavLink>01. About</NavLink>
           </LI>
           <LI>
-            <NavLink>2Experience</NavLink>
+            <NavLink>02. Experience</NavLink>
           </LI>
           <LI>
-            <NavLink>3Work</NavLink>
+            <NavLink>03. Work</NavLink>
           </LI>
           <LI>
-            <NavLink>4Contact</NavLink>
+            <NavLink>04. Contact</NavLink>
           </LI>
         </OL>
         <Button as={"a"} href={"#"} margin={"12px"}>Resume</Button>
      
     </Nav>
+   
   );
 };
 export default NavBar;
