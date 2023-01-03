@@ -49,16 +49,16 @@ const NavBar = () => {
       <NavLogo>B</NavLogo>
      <OL>
           <LI>
-            <NavLink>01. About</NavLink>
+            <NavLink> About</NavLink>
           </LI>
           <LI>
-            <NavLink>02. Experience</NavLink>
+            <NavLink> Experience</NavLink>
           </LI>
           <LI>
-            <NavLink>03. Work</NavLink>
+            <NavLink> Work</NavLink>
           </LI>
           <LI>
-            <NavLink>04. Contact</NavLink>
+            <NavLink> Contact</NavLink>
           </LI>
         </OL>
         <Button as={"a"} href={"#"} margin={"12px"}>Resume</Button>
