@@ -1,72 +1,39 @@
 
-import styled from 'styled-components';
+import Button from "./components/Button";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import NavBar from "./components/NavBar";
+import Paragraph from "./components/Paragraph";
+import Section from "./components/Section";
 
 
-const Button = styled.button`
-font-size: 1.5em;
-text-align: end;
-color: white;
-background-color: black;
-
-
-
-
-
-`;
-const NavBAR = styled.div`
-font-size: 1.5em;
-text-align: center;
-color:palevioletred ;
-text-decoration:none;
-display:flex;
-justify-content: space-between;
-
-`
-
-const Logo = styled.logo`
-
-
-
-`
-
-
-const Title = styled.section`
-padding: 4em;
-background: papayawhip;
-`;
 const App = () => {
-  return <>
-           
-           <NavBAR>
-          <Logo>
-           <svg id="logo" xmlns="http://www.w3.org/2000/svg" 
-           role="img" viewBox="0 0 84 96">
-            <title>Logo</title>
-            <g transform="translate(-8.000000, -2.000000)">
-              <g transform="translate(11.000000, 5.000000)">
-                <path d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z" 
-                fill="currentColor"></path>
-                <polygon id="Shape" 
-                stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon></g></g></svg>
-           </Logo>
-           <Links> 
-           <a href='#'>1.About</a>
-           <a href='#'>02.Experience</a>
-           <a href='#'>03.Work</a>
-           <a href='#'>04.Contact</a>
-           </Links>
-           <Button> Resume</Button>
-            </NavBAR>
+  return (
+    <>
+   
+    <NavBar/>
+      <Main>
+        <Section>
+          <Header>Hi, My name is</Header>
+          <Header>Brittany Chiang.</Header>
+          <Header>I build things for the web.</Header> 
+          
+          <Paragraph margin={"20px 10 0 0"} maxWidth={"772px"}>
+          I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at  <a href="#"> Upstate</a> .
+          </Paragraph>
+          
+          <Paragraph  maxWidth={"772px"}>
          
-          <Title> Hi, my name is
-            
-          <p>Brittany Chiang. I build things for the web.</p>
-          <p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at<a href='#'> Upstatement.</a></p>
-          </Title>
+          </Paragraph>
 
-         <Button>Check out my course !</Button>
-         </>
+          <Button as={"a"} href={"#"}  margin={"50px 0 0"} padding={"20px 28px"}>Checkout my course link</Button>
+        </Section>
+        <Section>
+          
+            </Section>
+      </Main>
+    </>
+  );
+};
 
-}
-
-export default App
+export default App;
